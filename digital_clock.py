@@ -10,10 +10,13 @@ def update_time():
 
 root = tk.Tk()
 root.title("Digital Clock by KLS")
+root.geometry("300x150")
+root.configure(bg="black")
 
-label = tk.Label(root, font=('Helvetica', 48), bg='black', fg='white')
-label.pack(pady=20)
+label = tk.Label(root, font=('Helvetica', 36), bg='black', fg='white')
+label.pack(expand=True)
 
 update_time()
 
 root.mainloop()
+
